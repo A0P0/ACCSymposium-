@@ -1,46 +1,77 @@
-/* style.css */
+/* Adjusted style.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
 }
 
 header {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 20px;
+    background-color: #B3A369; /* Georgia Tech Gold */
+    color: #FFFFFF;
+    padding: 20px 0;
     text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #FFFFFF;
     text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #8B6F47; /* Darker gold for hover/focus */
 }
 
 section {
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #f2f2f2;
+    max-width: 800px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 section h2 {
-    color: #007bff;
+    color: #00254C; /* Georgia Tech Navy */
 }
 
 footer {
-    background-color: #333;
-    color: #ffffff;
+    background-color: #00254C; /* Georgia Tech Navy */
+    color: #FFFFFF;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    padding: 10px 0;
     width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* Additional styling for better layout and typography */
+p, li {
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+a, a:visited {
+    color: #DAA520; /* Gold link color */
+}
+
+a:hover, a:focus {
+    color: #B3A369; /* Lighter gold for hover/focus */
 }
