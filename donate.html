@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to First-Gen Students at X University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Donate to First-Gen Students at X University</h1>
+    </header>
+    
+    <section id="donation-form">
+        <h2>Donation Form</h2>
+        <form action="/submit-donation" method="post">
+            <label for="donation-amount">Donation Amount:</label>
+            <input type="number" id="donation-amount" name="donation_amount" required><br><br>
+            
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact_name" required><br><br>
+            
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact_email" required><br><br>
+            
+            <input type="submit" value="Donate">
+        </form>
+    </section>
 
+    <footer>
+        <p><a href="index.html">Back to Main Site</a></p>
+    </footer>
+</body>
+</html>
